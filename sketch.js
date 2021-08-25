@@ -23,12 +23,12 @@ function setup() {
   bridge = new Bridge(15,{x:width/2-400,y:height/2});
   joinPoint = new Ground(width-600,height/2+10,40,20,"#8d6e63", true)
 
-  Matter.Composite.add(bridge.Body,joinPoint)
-  jointLink = new Link(bridge,jointPoint)
+  Matter.Composite.add(bridge.body, joinPoint);
+  jointLink = new Link(bridge, joinPoint);
 
 
   for (var i =0;i<=8;i++) {
-    var x = randon(width/2-200,width/2+300)
+    var x = random(width/2-200,width/2+300)
     var y = random (-10,140)
     var stone = new Stone(x,y,80,80)
     stones.push(stone)
