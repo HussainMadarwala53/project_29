@@ -6,7 +6,7 @@ class Link{
         {
           bodyA:bodyA.body.bodies[lastlink],
           pointA:{x:0,y:0},
-          bodyB:bodyB,
+          bodyB:bodyB.body,
           pointB:{x:0,y:0},
           length:-10,
           stiffness:0.01
